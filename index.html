@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FundAthlete - Empowering Underprivileged Athletes</title>
+  <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Arial', sans-serif; line-height: 1.6; color: #333; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* Container */
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    /* Header/Navbar */
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: fixed; width: 100%; z-index: 100; }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; }
+    .nav .logo { font-size: 1.5rem; font-weight: bold; color: #0077cc; }
+    .nav ul { display: flex; gap: 1.5rem; }
+    .nav ul li a:hover { color: #0077cc; }
+    .btn-signup { padding: 0.5rem 1rem; background: #0077cc; color: #fff; border-radius: 4px; transition: background 0.3s; }
+    .btn-signup:hover { background: #005fa3; }
+
+    /* Hero Section */
+    .hero { display: flex; align-items: center; justify-content: space-between; min-height: 100vh; padding-top: 80px; }
+    .hero-text { max-width: 600px; }
+    .hero-text h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero-text p { font-size: 1.2rem; margin-bottom: 2rem; color: #555; }
+    .hero-text .btn { padding: 0.75rem 1.5rem; background: #0077cc; color: #fff; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+    .hero-text .btn:hover { background: #005fa3; }
+    .hero-img img { max-width: 100%; height: auto; }
+
+    /* Features */
+    .features { padding: 4rem 0; text-align: center; }
+    .features h2 { margin-bottom: 2rem; font-size: 2.5rem; }
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+    .feature-card { padding: 2rem; border: 1px solid #e0e0e0; border-radius: 8px; transition: transform 0.3s; }
+    .feature-card:hover { transform: translateY(-10px); }
+    .feature-card h3 { margin-bottom: 1rem; font-size: 1.5rem; color: #0077cc; }
+    .feature-card p { color: #555; }
+
+    /* CTA Section */
+    .cta { background: #0077cc; color: #fff; text-align: center; padding: 4rem 1rem; }
+    .cta h2 { font-size: 2rem; margin-bottom: 1rem; }
+    .cta .btn { padding: 0.75rem 1.5rem; background: #fff; color: #0077cc; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; transition: background 0.3s; }
+    .cta .btn:hover { background: #eaeaea; }
+
+    /* Footer */
+    footer { background: #f8f8f8; padding: 2rem 1rem; }
+    .footer-container { display: flex; flex-wrap: wrap; justify-content: space-between; }
+    .footer-col { flex: 1 1 200px; margin: 1rem 0; }
+    .footer-col h4 { margin-bottom: 1rem; color: #0077cc; }
+    .footer-col ul li { margin-bottom: 0.5rem; }
+    .footer-col ul li a:hover { text-decoration: underline; }
+    .footer-bottom { text-align: center; margin-top: 2rem; font-size: 0. ninerem; color: #777; }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-img { margin-top: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <div class="logo">FundAthlete</div>
+      <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="#signup" class="btn-signup">Sign Up</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero container">
+    <div class="hero-text">
+      <h1>Empowering Underprivileged Athletes</h1>
+      <p>Join our mission to provide resources and funding to talented athletes who need it the most. Your support can make dreams come true.</p>
+      <button class="btn">Get Started</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://via.placeholder.com/500x400" alt="Athlete training">
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="features container">
+    <h2>Our Key Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Verified Programs</h3>
+        <p>All funding programs are authenticated to ensure your donations reach genuine athletes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Transparent Tracking</h3>
+        <p>Monitor how funds are used with real-time updates and reports.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Global Reach</h3>
+        <p>Support athletes from around the world, breaking barriers and creating champions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>Ready to Make a Difference?</h2>
+    <button class="btn">Sign Up Now</button>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-container">
+      <div class="footer-col">
+        <h4>FundAthlete</h4>
+        <p>Providing opportunities, building champions.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#signup">Sign Up</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>Email: support@fundathlete.com</li>
+          <li>Phone: +1 (555) 123-4567</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 FundAthlete. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>
